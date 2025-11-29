@@ -1,0 +1,33 @@
+inspiracje (słowa, skojarzenia, pomysły):
+- minimalizm
+- edukacja
+- grywalizacja
+- automatyzacja
+- społeczność
+- zdrowie
+- produktywność
+- IoT
+- wizualizacja danych
+- personalizacja
+
+krótka lista elementów projektów:
+- interfejs użytkownika (web / mobile)
+- panel administracyjny
+- baza danych
+- system logowania i uprawnień
+- REST API
+- powiadomienia (email, push)
+- moduł raportów i analityki
+- integracje z zewnętrznymi usługami
+
+wstępne dane wejściowe (np. lista kategorii, lista funkcji):
+- kategorie: edukacja, rozrywka, zdrowie, produktywność, e-commerce
+- funkcje priorytetowe: rejestracja/logowanie, profil użytkownika, wyszukiwanie, filtrowanie, dodawanie treści, komentowanie, oceny, eksport danych
+- opcjonalne: integracja z płatnościami, API dla zewnętrznych klientów
+
+lista źródeł pomysłu (np. znajomy, własna potrzeba, przypadek):
+- znajomy / rozmowy z użytkownikami
+- własna potrzeba / codzienny problem
+- analiza rynku / konkurencja
+- przypadek / losowe odkrycie
+- hackathon / konkurs projektowy
