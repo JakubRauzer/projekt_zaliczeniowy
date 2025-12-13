@@ -1,3 +1,10 @@
+```mermaid
+flowchart TD
+ A[Start] --> B[Etap 1]
+ B --> C[Etap 2]
+ C --> D[Stop]
+```
+
 # Bardzo duży nagłówek
 jakiś zwykły tekst
 **pogrubiony tekst** dalej tekst bez pogrubienia *a tu kursywa*
@@ -18,3 +25,12 @@ ostatni tekst
 [tutaj jest link](https://www.merito.pl/warszawa/?gad_source=1&gad_campaignid=23323723913&gbraid=0AAAAApcog9sD0nXMbPjXTZ8LxcU6ZJUoK&gclid=EAIaIQobChMI0fv_k7K6kQMVQRiiAx3BLzrFEAAYASAAEgLFePD_BwE)
 
 ![opis obrazka](logo-merito-warszawa.png)
+
+1. First item
+2. Second item
+3. Third item
+
+## Task list
+- [x] Task1
+- [ ] Task2
+- [ ] Task3
