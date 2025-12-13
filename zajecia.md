@@ -16,3 +16,5 @@ ostatni tekst
  ```
 
 [tutaj jest link](https://www.merito.pl/warszawa/?gad_source=1&gad_campaignid=23323723913&gbraid=0AAAAApcog9sD0nXMbPjXTZ8LxcU6ZJUoK&gclid=EAIaIQobChMI0fv_k7K6kQMVQRiiAx3BLzrFEAAYASAAEgLFePD_BwE)
+
+![opis obrazka](logo-merito-warszawa.png)
