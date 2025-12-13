@@ -1,35 +1,46 @@
-DIAGRAM PRZYPADKÓW UŻYCIA (ASCII)
+```mermaid
+flowchart TD
+    Start([Start])
 
-                +--------------------------------------------+
-                |                 System                     |
-                |                                            |
-                |    (Zaloguj się)                           |
-                |                                            |
-                |    (Wyślij dane)       (Integracja z API)  |
-                |         |---------------------|            |
-                |         |                     \           |
-                |    (Waliduj i przetwórz dane)  (Synchronizuj dane) |
-                |         |                     /           |
-                |    (Generuj raport)      (Eksport / Import) |
-                |         |                                    |
-                |    (Pobierz raport / Eksport)               |
-                |                                            |
-                |    (Zarządzaj konfiguracją)                 |
-                |    (Przeglądaj logi)                        |
-                +--------------------------------------------+
+    User[Użytkownik]
+    Admin[Administrator]
+    API[System zewnętrzny / API]
 
-Użytkownik (aktor)  ------------->  (Zaloguj się)
-                                  -> (Wyślij dane)
-                                  -> (Pobierz raport)
+    Login[Zaloguj się]
+    SendData[Wyślij dane]
+    GetReport[Pobierz raport]
 
-Administrator (aktor) ----------->  (Zaloguj się)
-                                  -> (Zarządzaj konfiguracją)
-                                  -> (Przeglądaj logi)
+    Config[Zarządzaj konfiguracją]
+    Logs[Przeglądaj logi]
 
-System zewnętrzny (aktor/API) -->  (Integracja z API)
-                                  -> (Synchronizuj dane)
-                                  -> (Eksport / Import)
+    Integration[Integracja z API]
+    Sync[Synchronizuj dane]
+    ImportExport[Eksport / Import]
 
-Uwagi:
-- Owal oznaczony tekstem w nawiasach = przypadek użycia.
-- Akcje użytkowników i administratora wskazane strzałkami do przypadków użycia.
+    End([Koniec])
+
+    Start --> User
+    Start --> Admin
+    Start --> API
+
+    User --> Login
+    User --> SendData
+    User --> GetReport
+
+    Admin --> Login
+    Admin --> Config
+    Admin --> Logs
+
+    API --> Integration
+    API --> Sync
+    API --> ImportExport
+
+    Login --> End
+    SendData --> End
+    GetReport --> End
+    Config --> End
+    Logs --> End
+    Integration --> End
+    Sync --> End
+    ImportExport --> End
+```
